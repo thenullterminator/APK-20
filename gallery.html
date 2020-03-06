@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Big Horror is an awarded branding and web design agency based in Athens, Greece.">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Aparoksha'20</title>
+    <title>Gallery - Aparoksha'20</title>
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.html"> -->
     <!-- Place favicon.ico in the root directory -->
@@ -46,11 +46,19 @@
 
     -->
     <script src="app/themes/bighorrorathens/scripts/vendor/modernizr.js"></script>
+    <style>
+        .project-content.active .shape-mask__screen {
+            display: none;
+        }
+        .project-content__desc {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <header class="site-header">
-        <a href="#" class="site-logo js-link" data-fn="goToSection" data-prm='["welcome"]'>
+        <a href="./index.html" class="site-logo js-link" data-fn="goToSection" data-prm='["welcome"]'>
             <svg class="here" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.66 894.59">
                 <defs>
                     <style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style>
@@ -70,7 +78,7 @@
         </a>
         <nav class="site-menu">
             <ul>
-              <!-- <li><a href="showcase/index.html">Visit Old Website<span></span></a></li>--> 
+              <!-- <li><a href="showcase/index.html">Visit Old Website<span></span></a></li>-->
               <li><a href="./gallery.html">GALLERY<span></span></a> <span></span></li>
               <li><a href="./sponsor.html">PAST SPONSORS<span></span></a> <span></span></li>
               <li><a href="mailto:team.aparoksha@iiita.ac.in">Contact<span></span></a> <span></span></li>
@@ -79,75 +87,7 @@
         </nav>
     </header>
     <main class="site-wrapper">
-        <!-- WelcomeSection -->
-        <section id="welcome" class="slide">
-            <div id="scene-wrapper"></div>
-            <div class="container">
-                <div class="welcome-content container__inner">
-                    <div class="welcome-content__fill">&nbsp;</div>
-                    <div class="welcome-content__desc">
-                        <div class="hero-copy">
-                            <div class="hero-copy__inner">
-                                <div class="t-copy-xs">
-                                    <div class="copy-line">
-                                        <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span style="font-size: 15px;">Launching in </span></div>
-                                    </div>
-                                </div>
-                                <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Mar 26, 2020 0:0:0").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("this").innerHTML = "<span class='time1'>" + days + "</span>" + "<small>D</small> " +"<span class='time1'>"+ hours + "</span>" +"<small>H</small> "
- + "<span class='time1'>" + minutes + "</span>" +"<small>M</small> " + "<span class='time1'>" + seconds + "</span>" +"<small>S</small> ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-                                <div class="t-copy-xl">
-                                <span id="this" ></span>
-                                   <!-- <div class="copy-line"><span id="this">Right or wrong,</span> <span class="next">So, we broke our</span></div>
-                                    <div class="copy-line"><span>it's very pleasant</span> <span class="next">tired old website</span></div>
-                                    <div class="copy-line"><span>to break</span> <span class="next">to make</span></div>
-                                    <div class="copy-line"><span>something from</span> <span class="next">something more</span></div>
-                                    <div class="copy-line"><span>time to time.*</span> <span class="next">awesome.</span></div>-->
-                                </div>
-                            </div>
-                            <div class="buttons-wrapper">
-                                <a href="#" id="view-projects" class="btn js-link" data-fn="goToSection" data-prm='["projects"]'>
-                                    <div class="copy-line size"><span class="btn__text">Explore Aparoksha</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="quote-credit">
-                <div class="t-copy-xs">
-                    <div class="copy-line"><span> - &nbsp;&nbsp;Team Aparoksha</span></div>
-                </div>
-            </div>
-        </section>
-        <!-- /WelcomeSection -->
         <!-- ProjectsSection -->
         <section id="projects" class="slide">
             <!-- Decoration -->
@@ -762,7 +702,7 @@ var x = setInterval(function() {
     </footer>
     
     <script src="app/themes/bighorrorathens/scripts/vendor.js"></script>
-    <script src="app/themes/bighorrorathens/scripts/app.js"></script>
+    <script src="app/themes/bighorrorathens/scripts/app-noani-gallery.js"></script>
 </body>
 <!-- Mirrored from www.bighorrorathens.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Dec 2019 22:16:23 GMT -->
 
