@@ -1021,7 +1021,7 @@ function pad(n, width, z) {
      */
     this.goTo = function (next, instant) {
 
-      instant = typeof instant !== 'undefined' ? instant : false;
+      instant = typeof instant !== 'undefined' ? instant : true;
 
       // Check if we're current navigating (=transitioning) 
       // from one project to another, and return if we are.
