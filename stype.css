@@ -83,3 +83,13 @@ small{
 .time1{
     font-size: 60px;
 }
+
+.site-menu ul li:first-of-type {
+    display: inline-block;
+}
+
+@media (max-width: 767px) {
+    .projects-nav {
+        display: none;
+    }
+}
