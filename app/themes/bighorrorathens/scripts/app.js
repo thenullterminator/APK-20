@@ -1345,6 +1345,7 @@ function isWebglAvailable() {
 
         switch (app.currentSection) {
           case 'welcome':
+            TweenMax.to($('.site-menu, .site-footer'), 1, { y: '0px', autoAlpha: 1, ease: Power2.easeOut });
             break;
           case 'projects':
             // Show header & footer
@@ -1358,8 +1359,8 @@ function isWebglAvailable() {
         switch (app.currentSection) {
           case 'welcome':
             // Hide header & footer
-            TweenMax.to($('.site-menu'), 1, { y: '-60px', autoAlpha: 0, ease: Power2.easeOut });
-            TweenMax.to($('.site-footer'), 1, { y: '60px', autoAlpha: 0, ease: Power2.easeOut });
+            // TweenMax.to($('.site-menu'), 1, { y: '-60px', autoAlpha: 0, ease: Power2.easeOut });
+            // TweenMax.to($('.site-footer'), 1, { y: '60px', autoAlpha: 0, ease: Power2.easeOut });
             break;
           case 'projects':
             break;

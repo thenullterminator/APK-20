@@ -167,3 +167,35 @@ label{
       z-index: 100;
   }
 }
+
+.centerit{
+  text-align: center;
+  margin-left: -400px;
+  margin-top: -40px;
+  /* margin-bottom: ; */
+}
+
+.buttons-wrapper{
+  /* padding: 20px; */
+  margin-left: 70px;
+  /* text-align: center; */
+}
+.size{
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.menu ul li{
+  font-size: 20px !important;
+}
+
+.mobile{
+  margin-top: 100px;
+  margin-left: 425px;
+  margin-bottom: -40px;
+  /* width: 320px; */
+
+}
+.mobile img{
+  height: 50px;
+}
