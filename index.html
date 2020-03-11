@@ -46,18 +46,36 @@
 
     -->
     <script src="app/themes/bighorrorathens/scripts/vendor/modernizr.js"></script>
+    <style>
+        @media screen and (min-width: 600px) {
+            #optionalstuff {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header class="site-header">
         <a href="#" class="site-logo js-link" data-fn="goToSection" data-prm='["welcome"]'>
-            <svg class="here" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.66 894.59">
+            <svg class="here" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1000.66 894.59">
                 <defs>
-                    <style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke: #000;
+                            stroke-miterlimit: 10;
+                            stroke-width: 2px;
+                        }
+                    </style>
                 </defs>
                 <title>apkk2</title>
-                <path class="cls-1" d="M173.14,689.45l317.27,0-103,180.24S350.55,940.36,262,955.07L13.4,957.78Z" transform="translate(-11.63 -64.21)"/>
-                <path class="cls-1" d="M197.08,627.1S306.44,490.09,384,483.67c0,0,178.2,7.81,191.32-.53,0,0,106.63-64.46,0-146s-256.76,59.48-256.76,59.48L509.93,66.22l500.67,886.2-233.19,5.07S681,937,641.24,862.21,517,627.31,517,627.31Z" transform="translate(-11.63 -64.21)"/>
+                <path class="cls-1" d="M173.14,689.45l317.27,0-103,180.24S350.55,940.36,262,955.07L13.4,957.78Z"
+                    transform="translate(-11.63 -64.21)" />
+                <path class="cls-1"
+                    d="M197.08,627.1S306.44,490.09,384,483.67c0,0,178.2,7.81,191.32-.53,0,0,106.63-64.46,0-146s-256.76,59.48-256.76,59.48L509.93,66.22l500.67,886.2-233.19,5.07S681,937,641.24,862.21,517,627.31,517,627.31Z"
+                    transform="translate(-11.63 -64.21)" />
             </svg>
             <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 997.19 891.56">
                 <title>apkk1</title>
@@ -70,18 +88,19 @@
         </a>
         <nav class="site-menu">
 
-          <label for="toggle">&#9776;</label>
-          <input type="checkbox" id="toggle">
-          <div class="menu">
-            <ul>
-              <!-- <li><a href="showcase/index.html">Visit Old Website<span></span></a></li>-->
-              <li><a href="./events.html">EVENTS<span></span></a><span></span></li>
-              <li><a href="./gallery.html">GALLERY<span></span></a> <span></span></li>
-              <li><a href="./sponsor.html">PAST SPONSORS<span></span></a> <span></span></li>
-              <li><a href="mailto:team.aparoksha@iiita.ac.in">Contact<span></span></a> <span></span></li>
-              <!-- <li><a href="https://goo.gl/maps/bGKtzRkNMTK2" target="_blank">Find Us<span></span></a> <span></span></li>-->
-            </ul>
-          </div>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <ul>
+                    <!-- <li><a href="showcase/index.html">Visit Old Website<span></span></a></li>-->
+                    <li class="about-li"><a href="#about">ABOUT US<span></span></a><span></span></li>
+                    <li><a href="./events.html">FLAGSHIP EVENTS<span></span></a><span></span></li>
+                    <li><a href="./gallery.html">GALLERY<span></span></a> <span></span></li>
+                    <li><a href="./sponsor.html">PAST SPONSORS<span></span></a> <span></span></li>
+                    <li><a href="mailto:team.aparoksha@iiita.ac.in">Contact<span></span></a> <span></span></li>
+                    <!-- <li><a href="https://goo.gl/maps/bGKtzRkNMTK2" target="_blank">Find Us<span></span></a> <span></span></li>-->
+                </ul>
+            </div>
 
         </nav>
     </header>
@@ -89,72 +108,46 @@
         <!-- WelcomeSection -->
         <section id="welcome" class="slide">
             <div id="scene-wrapper"></div>
-            <div class="container">
+            <div class="container centerit">
                 <div class="welcome-content container__inner">
                     <div class="welcome-content__fill">&nbsp;</div>
                     <div class="welcome-content__desc">
                         <div class="hero-copy">
                             <div class="hero-copy__inner">
-                                <div class="t-copy-xs">
-                                    <div class="copy-line">
-                                        <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span style="font-size: 15px;">Launching in </span></div>
-                                    </div>
+                                <div id="optionalstuff" class="t-copy-xs mobile" style="align-content: center;">
+                                    <img src="svg/apkkk.png">
                                 </div>
-                                <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Mar 26, 2020 0:0:0").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Output the result in an element with id="demo"
-  document.getElementById("this").innerHTML = "<span class='time1'>" + days + "</span>" + "<small>D</small> " +"<span class='time1'>"+ hours + "</span>" +"<small>H</small> "
- + "<span class='time1'>" + minutes + "</span>" +"<small>M</small> " + "<span class='time1'>" + seconds + "</span>" +"<small>S</small> ";
-
-  // If the count down is over, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
 
                                 <div class="t-copy-xl">
-                                <span id="this" ></span>
-                                   <!-- <div class="copy-line"><span id="this">Right or wrong,</span> <span class="next">So, we broke our</span></div>
-                                    <div class="copy-line"><span>it's very pleasant</span> <span class="next">tired old website</span></div>
-                                    <div class="copy-line"><span>to break</span> <span class="next">to make</span></div>
-                                    <div class="copy-line"><span>something from</span> <span class="next">something more</span></div>
-                                    <div class="copy-line"><span>time to time.*</span> <span class="next">awesome.</span></div>-->
+                                    <img src="svg/apkkk.png" alt="" width="130%" height="30%">
                                 </div>
                             </div>
+
                             <div class="buttons-wrapper">
-                                <a href="#" id="view-projects" class="btn js-link" data-fn="goToSection" data-prm='["projects"]'>
-                                    <div class="copy-line size"><span class="btn__text">Explore Aparoksha</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
+                                <a href="#" id="view-projects" class="btn js-link" data-fn="goToSection"
+                                    data-prm='["projects"]'>
+                                    <div class="copy-line size"><span class="btn__text">Explore</span></div><span
+                                        class="btn__line"></span> <span class="btn__line"></span> <span
+                                        class="btn__line"></span> <span class="btn__line"></span>
+                                </a>
+                                <!-- <a href="#" id="view-projects" class="btn js-link" data-fn="goToSection" data-prm='["projects"]'>
+                                    <div class="copy-line size"><span class="btn__text">Register</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a> -->
+
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="quote-credit">
                 <div class="t-copy-xs">
-                    <div class="copy-line"><span> - &nbsp;&nbsp;Team Aparoksha</span></div>
+                    <!-- <div class="copy-line"><span> - &nbsp;&nbsp;Team Aparoksha</span></div> -->
                 </div>
             </div>
         </section>
         <!-- /WelcomeSection -->
+
+
         <!-- ProjectsSection -->
         <section id="projects" class="slide">
             <!-- Decoration -->
@@ -181,13 +174,17 @@ var x = setInterval(function() {
                                     <div class="inner"></div>
                                 </div>
                             </div>
-                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve">
+                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px"
+                                viewBox="0 0 488.811 305.93" xml:space="preserve">
                                 <defs>
-                                    <pattern id="pattern-christou" class="box" patternUnits="userSpaceOnUse" width="537" height="367">
-                                        <image xlink:href="app/themes/bighorrorathens/images/christou.jpg" x="0" y="0" width="537" height="367" />
+                                    <pattern id="pattern-christou" class="box" patternUnits="userSpaceOnUse" width="537"
+                                        height="367">
+                                        <image xlink:href="app/themes/bighorrorathens/images/christou.jpg" x="0" y="0"
+                                            width="537" height="367" />
                                     </pattern>
                                 </defs>
-                                <path fill="url(#pattern-christou)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
+                                <path fill="url(#pattern-christou)"
+                                    d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
                             </svg>
                         </div>
                     </div>
@@ -196,14 +193,18 @@ var x = setInterval(function() {
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
-                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Aparoksha'19</span></div>
+                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span>
+                                        <span>Aparoksha'19</span></div>
                                 </div>
                             </div>
                             <div class="t-copy-xl">
                                 <div class="copy-line"><span>Confab</span></div>
                             </div>
                             <div class="t-copy-md">
-                                <p>Confab, the flagship panel discussion event of Aparoksha, is a battle of thoughts. Comprising highly knowledgeable panelists, the event takes you to the world of verdicts and opinions. The aim is to reach every possible notion and idea of the hot topic decided.</p>
+                                <p>Confab, the flagship panel discussion event of Aparoksha, is a battle of thoughts.
+                                    Comprising highly knowledgeable panelists, the event takes you to the world of
+                                    verdicts and opinions. The aim is to reach every possible notion and idea of the hot
+                                    topic decided.</p>
                                 <!-- <p>The result is a modern - fashionable website, easy to use and navigated. A modern design with a fashion photography direction in combination with unique transitions we developed, will be very difficult to erase it from your memory!</p> -->
                             </div>
                         </div>
@@ -218,7 +219,7 @@ var x = setInterval(function() {
                 </div>
                 <div class="project-content container__inner" id="project-content--momcycle" style="">
                     <div class="project-content__shape">
-                        <div class="shape-mask"><img  src="app/themes/bighorrorathens/images/img5.jpg">
+                        <div class="shape-mask"><img src="app/themes/bighorrorathens/images/img5.jpg">
                             <div class="shape-mask__screen">
                                 <div class="outer">
                                     <div class="inner"></div>
@@ -230,13 +231,17 @@ var x = setInterval(function() {
                                     <div class="inner"></div>
                                 </div>
                             </div>
-                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve">
+                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px"
+                                viewBox="0 0 488.811 305.93" xml:space="preserve">
                                 <defs>
-                                    <pattern id="pattern-momcycle" class="box" patternUnits="userSpaceOnUse" width="537" height="367">
-                                        <image xlink:href="app/themes/bighorrorathens/images/momcycle.jpg" x="0" y="0" width="537" height="367" />
+                                    <pattern id="pattern-momcycle" class="box" patternUnits="userSpaceOnUse" width="537"
+                                        height="367">
+                                        <image xlink:href="app/themes/bighorrorathens/images/momcycle.jpg" x="0" y="0"
+                                            width="537" height="367" />
                                     </pattern>
                                 </defs>
-                                <path fill="url(#pattern-momcycle)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
+                                <path fill="url(#pattern-momcycle)"
+                                    d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
                             </svg>
                         </div>
                     </div>
@@ -245,14 +250,18 @@ var x = setInterval(function() {
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
-                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Aparoksha'19</span></div>
+                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span>
+                                        <span>Aparoksha'19</span></div>
                                 </div>
                             </div>
                             <div class="t-copy-xl">
                                 <div class="copy-line"><span>TEDx</span></div>
                             </div>
                             <div class="t-copy-md">
-                                <p>TedxIIITA aims at giving the audience a lifetime experience of listening to the live TED talks by some of the greatest and the most inspiring people ever born. Be ready to be lost in the sphere of creativity and innovation, thoughts and ideas, and the urge to bring a change. </p>
+                                <p>TedxIIITA aims at giving the audience a lifetime experience of listening to the live
+                                    TED talks by some of the greatest and the most inspiring people ever born. Be ready
+                                    to be lost in the sphere of creativity and innovation, thoughts and ideas, and the
+                                    urge to bring a change. </p>
                             </div>
                         </div>
                         <!-- <div class="buttons-wrapper">
@@ -278,13 +287,17 @@ var x = setInterval(function() {
                                     <div class="inner"></div>
                                 </div>
                             </div>
-                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve">
+                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px"
+                                viewBox="0 0 488.811 305.93" xml:space="preserve">
                                 <defs>
-                                    <pattern id="pattern-anaktae" class="box" patternUnits="userSpaceOnUse" width="537" height="367">
-                                        <image xlink:href="app/themes/bighorrorathens/images/anaktae.jpg" x="0" y="0" width="537" height="367" />
+                                    <pattern id="pattern-anaktae" class="box" patternUnits="userSpaceOnUse" width="537"
+                                        height="367">
+                                        <image xlink:href="app/themes/bighorrorathens/images/anaktae.jpg" x="0" y="0"
+                                            width="537" height="367" />
                                     </pattern>
                                 </defs>
-                                <path fill="url(#pattern-anaktae)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
+                                <path fill="url(#pattern-anaktae)"
+                                    d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
                             </svg>
                         </div>
                     </div>
@@ -293,14 +306,17 @@ var x = setInterval(function() {
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
-                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Aparoksha'19</span></div>
+                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span>
+                                        <span>Aparoksha'19</span></div>
                                 </div>
                             </div>
                             <div class="t-copy-xl">
                                 <div class="copy-line"><span>Comedy Night</span></div>
                             </div>
                             <div class="t-copy-md">
-                                <p>The most awaited evening of the fest, Comedy Night, will compel you to go crazy and burst into laughter. With the arrival of none other than Zakir Khan in the previous edition, Comedy Night became one of the most memorable events of the fest. </p>
+                                <p>The most awaited evening of the fest, Comedy Night, will compel you to go crazy and
+                                    burst into laughter. With the arrival of none other than Zakir Khan in the previous
+                                    edition, Comedy Night became one of the most memorable events of the fest. </p>
                             </div>
                         </div>
                         <!-- <div class="buttons-wrapper">
@@ -326,13 +342,17 @@ var x = setInterval(function() {
                                     <div class="inner"></div>
                                 </div>
                             </div>
-                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve">
+                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px"
+                                viewBox="0 0 488.811 305.93" xml:space="preserve">
                                 <defs>
-                                    <pattern id="pattern-globiq" class="box" patternUnits="userSpaceOnUse" width="537" height="367">
-                                        <image xlink:href="app/themes/bighorrorathens/images/globiq.jpg" x="0" y="0" width="537" height="367" />
+                                    <pattern id="pattern-globiq" class="box" patternUnits="userSpaceOnUse" width="537"
+                                        height="367">
+                                        <image xlink:href="app/themes/bighorrorathens/images/globiq.jpg" x="0" y="0"
+                                            width="537" height="367" />
                                     </pattern>
                                 </defs>
-                                <path fill="url(#pattern-globiq)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
+                                <path fill="url(#pattern-globiq)"
+                                    d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
                             </svg>
                         </div>
                     </div>
@@ -341,117 +361,23 @@ var x = setInterval(function() {
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
-                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Aparoksha'19</span></div>
+                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span>
+                                        <span>Aparoksha'19</span></div>
                                 </div>
                             </div>
                             <div class="t-copy-xl">
                                 <div class="copy-line"><span>Rahat Indori</span></div>
                             </div>
                             <div class="t-copy-md">
-                                <p>The greatest poet of all times, mesmerising the world with his poetries, Rahat Indori graced the stage of Aparoksha’19 with his heart touching verses. The institute was honoured to have such an inspiring artist amongst us all.</p>
+                                <p>The greatest poet of all times, mesmerising the world with his poetries, Rahat Indori
+                                    graced the stage of Aparoksha’19 with his heart touching verses. The institute was
+                                    honoured to have such an inspiring artist amongst us all.</p>
                             </div>
                         </div>
                         <!-- <div class="buttons-wrapper">
                             <a href="https://www.colivar.com/" id="view-projects" class="btn" target="_blank">
                                 <div class="copy-line"><span class="btn__text">Visit Website</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> </a>
                             <a href="https://www.behance.net/gallery/63300761/Colivar" id="view-projects" class="btn" target="_blank">
-                                <div class="copy-line"><span class="btn__text">View Case Study</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
-                        </div> -->
-                    </div>
-                    <!-- End:HeroCopy -->
-                </div>
-                <div class="project-content container__inner" id="project-content--ode" style="">
-                    <div class="project-content__shape">
-                        <div class="shape-mask"><img src="app/themes/bighorrorathens/images/events/codered.jpg">
-                            <div class="shape-mask__screen">
-                                <div class="outer">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="outer">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="outer">
-                                    <div class="inner"></div>
-                                </div>
-                            </div>
-                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve">
-                                <defs>
-                                    <pattern id="pattern-ode" class="box" patternUnits="userSpaceOnUse" width="537" height="367">
-                                        <image xlink:href="app/themes/bighorrorathens/images/ode.jpg" x="0" y="0" width="537" height="367" />
-                                    </pattern>
-                                </defs>
-                                <path fill="url(#pattern-ode)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- HeroCopy -->
-                    <div class="project-content__desc hero-copy">
-                        <div class="hero-copy__inner">
-                            <div class="t-copy-xs">
-                                <div class="copy-line">
-                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Aparoksha'19</span></div>
-                                </div>
-                            </div>
-                            <div class="t-copy-xl">
-                                <div class="copy-line"><span>Codered</span></div>
-                            </div>
-                            <div class="t-copy-md">
-                                <p>CodeRed is the flagship competitive coding event of Aparoksha, wherein the coding fanatics from all over the country participate in teams, code and survive through the contest and win exciting prizes. Be ready to brush up your coding skills and compete with the best.</p>
-                                <!-- <p>We created a website that reveals the beauty and the details of their unique jewels. It's easy to use and navigate, and in combination with a modern design and smooth transitions it aims to make your journey through their goods a memorable experience.</p> -->
-                            </div>
-                        </div>
-                        <!-- <div class="buttons-wrapper">
-                            <a href="https://www.odegoods.com/" id="view-projects" class="btn" target="_blank">
-                                <div class="copy-line"><span class="btn__text">Visit Website</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> </a>
-                            <a href="https://www.behance.net/gallery/46752317/Ode-Goods-E-commerce" id="view-projects" class="btn" target="_blank">
-                                <div class="copy-line"><span class="btn__text">View Case Study</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
-                        </div> -->
-                    </div>
-                    <!-- End:HeroCopy -->
-                </div>
-                <div class="project-content container__inner" id="project-content--nikoskoulis" style="">
-                    <div class="project-content__shape">
-                        <div class="shape-mask"><img src="app/themes/bighorrorathens/images/events/fragfest.jpg">
-                            <div class="shape-mask__screen">
-                                <div class="outer">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="outer">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="outer">
-                                    <div class="inner"></div>
-                                </div>
-                            </div>
-                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve">
-                                <defs>
-                                    <pattern id="pattern-nikoskoulis" class="box" patternUnits="userSpaceOnUse" width="537" height="367">
-                                        <image xlink:href="app/themes/bighorrorathens/images/nikoskoulis.jpg" x="0" y="0" width="537" height="367" />
-                                    </pattern>
-                                </defs>
-                                <path fill="url(#pattern-nikoskoulis)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- HeroCopy -->
-                    <div class="project-content__desc hero-copy">
-                        <div class="hero-copy__inner">
-                            <div class="t-copy-xs">
-                                <div class="copy-line">
-                                    <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Aparoksha'19</span></div>
-                                </div>
-                            </div>
-                            <div class="t-copy-xl">
-                                <div class="copy-line"><span>Fragfest</span></div>
-                            </div>
-                            <div class="t-copy-md">
-                                <p>With the e-gaming flagship event of Aparoksha, experience the thrill of gaming, competing and keeping up your spirits throughout the event to achieve the title of 'The Champion’. Do you think you are a great gamer? Well then, prove it here.</p>
-                            </div>
-                        </div>
-                        <!-- <div class="buttons-wrapper">
-                            <a href="http://nikoskoulis.gr/" id="view-projects" class="btn" target="_blank">
-                                <div class="copy-line"><span class="btn__text">Visit Website</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> </a>
-                            <a href="https://www.behance.net/gallery/33595629/Nikos-Koulis-Jewels" id="view-projects" class="btn" target="_blank">
                                 <div class="copy-line"><span class="btn__text">View Case Study</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
                         </div> -->
                     </div>
@@ -481,8 +407,8 @@ var x = setInterval(function() {
                             </svg>
                         </div>
                     </div> -->
-                    <!-- HeroCopy -->
-                    <!-- <div class="project-content__desc hero-copy">
+                <!-- HeroCopy -->
+                <!-- <div class="project-content__desc hero-copy">
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
@@ -504,9 +430,9 @@ var x = setInterval(function() {
                                 <div class="copy-line"><span class="btn__text">View Case Study</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
                         </div>
                     </div> -->
-                    <!-- End:HeroCopy -->
-                </div>
-                <!-- <div class="project-content container__inner" id="project-content--apivita" style="">
+                <!-- End:HeroCopy -->
+            </div>
+            <!-- <div class="project-content container__inner" id="project-content--apivita" style="">
                     <div class="project-content__shape">
                         <div class="shape-mask"><img src="app/themes/bighorrorathens/images/apivita.jpg">
                             <div class="shape-mask__screen">
@@ -530,8 +456,8 @@ var x = setInterval(function() {
                             </svg>
                         </div>
                     </div> -->
-                    <!-- HeroCopy -->
-                    <!-- <div class="project-content__desc hero-copy">
+            <!-- HeroCopy -->
+            <!-- <div class="project-content__desc hero-copy">
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
@@ -552,9 +478,9 @@ var x = setInterval(function() {
                                 <div class="copy-line"><span class="btn__text">View Case Study</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
                         </div>
                     </div> -->
-                    <!-- End:HeroCopy -->
-                </div>
-                <!-- <div class="project-content container__inner" id="project-content--kiryianni" style="">
+            <!-- End:HeroCopy -->
+            </div>
+            <!-- <div class="project-content container__inner" id="project-content--kiryianni" style="">
                     <div class="project-content__shape">
                         <div class="shape-mask"><img src="app/themes/bighorrorathens/images/kiryianni.jpg">
                             <div class="shape-mask__screen">
@@ -578,8 +504,8 @@ var x = setInterval(function() {
                             </svg>
                         </div>
                     </div> -->
-                    <!-- HeroCopy -->
-                    <!-- <div class="project-content__desc hero-copy">
+            <!-- HeroCopy -->
+            <!-- <div class="project-content__desc hero-copy">
                         <div class="hero-copy__inner">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
@@ -600,23 +526,31 @@ var x = setInterval(function() {
                                 <div class="copy-line"><span class="btn__text">View Case Study</span></div><span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span></a>
                         </div>
                     </div> -->
-                    <!-- End:HeroCopy -->
-                </div>
+            <!-- End:HeroCopy -->
+            </div>
             </div>
             <!-- /Content -->
             <nav class="projects-nav">
                 <a href="#" class="arrow-next">
-                    <svg id="svg-arrow-next" x="0px" y="0px" width="29.2px" height="29.2px" viewBox="0 0 29.2 29.2" xml:space="preserve">
-                        <line class="arrow-line-diagonal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28.403" y1="0.734" x2="1.038" y2="28.1" />
-                        <line class="arrow-line-vertical" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1.038" y1="18.288" x2="1.038" y2="29.2" />
-                        <line class="arrow-line-horizontal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10.912" y1="28.1" x2="0" y2="28.1" />
+                    <svg id="svg-arrow-next" x="0px" y="0px" width="29.2px" height="29.2px" viewBox="0 0 29.2 29.2"
+                        xml:space="preserve">
+                        <line class="arrow-line-diagonal" fill="none" stroke="#000000" stroke-width="2"
+                            stroke-miterlimit="10" x1="28.403" y1="0.734" x2="1.038" y2="28.1" />
+                        <line class="arrow-line-vertical" fill="none" stroke="#000000" stroke-width="2"
+                            stroke-miterlimit="10" x1="1.038" y1="18.288" x2="1.038" y2="29.2" />
+                        <line class="arrow-line-horizontal" fill="none" stroke="#000000" stroke-width="2"
+                            stroke-miterlimit="10" x1="10.912" y1="28.1" x2="0" y2="28.1" />
                     </svg>
                 </a>
                 <a href="#" class="arrow-prev">
-                    <svg id="svg-arrow-prev" x="0px" y="0px" width="29.2px" height="29.2px" viewBox="0 0 29.2 29.2" xml:space="preserve">
-                        <line class="arrow-line-diagonal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28.403" y1="0.734" x2="1.038" y2="28.1" />
-                        <line class="arrow-line-vertical" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1.038" y1="18.288" x2="1.038" y2="29.2" />
-                        <line class="arrow-line-horizontal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10.912" y1="28.1" x2="0" y2="28.1" />
+                    <svg id="svg-arrow-prev" x="0px" y="0px" width="29.2px" height="29.2px" viewBox="0 0 29.2 29.2"
+                        xml:space="preserve">
+                        <line class="arrow-line-diagonal" fill="none" stroke="#000000" stroke-width="2"
+                            stroke-miterlimit="10" x1="28.403" y1="0.734" x2="1.038" y2="28.1" />
+                        <line class="arrow-line-vertical" fill="none" stroke="#000000" stroke-width="2"
+                            stroke-miterlimit="10" x1="1.038" y1="18.288" x2="1.038" y2="29.2" />
+                        <line class="arrow-line-horizontal" fill="none" stroke="#000000" stroke-width="2"
+                            stroke-miterlimit="10" x1="10.912" y1="28.1" x2="0" y2="28.1" />
                     </svg>
                 </a>
             </nav>
@@ -641,7 +575,8 @@ var x = setInterval(function() {
                         <div class="about-content__left">
                             <div class="t-copy-xs">
                                 <div class="copy-line">
-                                    <div class="t-lined-pre t-lined-pre--white"><span class="t-lined-pre__line"></span> <span>About us</span></div>
+                                    <div class="t-lined-pre t-lined-pre--white"><span class="t-lined-pre__line"></span>
+                                        <span>About us</span></div>
                                 </div>
                             </div>
                             <div class="t-copy-xl">
@@ -650,16 +585,24 @@ var x = setInterval(function() {
                                 <div class="copy-line"><span>creative studio.</span></div> -->
                             </div>
                             <div class="t-copy-md">
-                                <p>Aparoksha is the Annual Technical Festival of IIIT Allahabad (A Centre of Excellence in Information Technology established by Ministry of HRD, Govt. of India).</p>
-                                <p>A collaboration of, for and by tech enthusiasts, Aparoksha is a platform for technocrats to code, design and build innovative solutions to transform India into a digitally empowered society and a knowledge based economy, all while providing a venue for self-expression and creativity. </p>
+                                <p>Aparoksha is the Annual Technical Festival of IIIT Allahabad (A Centre of Excellence
+                                    in Information Technology established by Ministry of HRD, Govt. of India).</p>
+                                <p>A collaboration of, for and by tech enthusiasts, Aparoksha is a platform for
+                                    technocrats to code, design and build innovative solutions to transform India into a
+                                    digitally empowered society and a knowledge based economy, all while providing a
+                                    venue for self-expression and creativity. </p>
                                 <!-- <p>Aparoksha boasts a plethora of intensive and gripping technical events. To name a few, Aparoksha is home to Hack In the North, the largest student held Hackathon in North India organised by GitHub and TopCoder. Aparoksha also holds TopCoder Humblefool Cup,a 2-tier ACM-ICPC style national level coding contest organised in the honour of Harsha Suryanarayana, an alumnus of IIIT Allahabad, known to the world as one of the greatest coders India has ever produced.</p> -->
-                                <p>Technology is best when it brings people together'. In keeping with this motto, Aparoksha also organises a Tech Tour, an initiative taken by the Technical Society of IIIT Allahabad to conduct workshops and talks in various schools and colleges across India to increase technical awareness, build enthusiasm in people and give back to the society.</p>
+                                <p>Technology is best when it brings people together'. In keeping with this motto,
+                                    Aparoksha also organises a Tech Tour, an initiative taken by the Technical Society
+                                    of IIIT Allahabad to conduct workshops and talks in various schools and colleges
+                                    across India to increase technical awareness, build enthusiasm in people and give
+                                    back to the society.</p>
                             </div>
                             <div class="t-copy-md">
                                 <p>Festival Coordinators</p>
                                 <p>Ekansh Bansal +(91) 9149247968 <br>
-                                Animesh Jha +(91) 7004474841</p>
-                                </div>
+                                    Animesh Jha +(91) 7004474841</p>
+                            </div>
                         </div>
                         <!-- <div class="about-content__right">
                             <div class="t-copy-xs">
@@ -724,11 +667,22 @@ var x = setInterval(function() {
 
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000.66 894.59">
                     <defs>
-                        <style>.cls-1{fill:#000;stroke:#000;stroke-miterlimit:10;stroke-width:10px;}</style>
+                        <style>
+                            .cls-1 {
+                                fill: #000;
+                                stroke: #000;
+                                stroke-miterlimit: 10;
+                                stroke-width: 10px;
+                            }
+                        </style>
                     </defs>
                     <title>apkk2</title>
-                    <path class="cls-1 apkLower" d="M173.14,689.45l317.27,0-103,180.24S350.55,940.36,262,955.07L13.4,957.78Z" transform="translate(-11.63 -64.21)"/>
-                    <path class="cls-1 apkUpper" d="M197.08,627.1S306.44,490.09,384,483.67c0,0,178.2,7.81,191.32-.53,0,0,106.63-64.46,0-146s-256.76,59.48-256.76,59.48L509.93,66.22l500.67,886.2-233.19,5.07S681,937,641.24,862.21,517,627.31,517,627.31Z" transform="translate(-11.63 -64.21)"/>
+                    <path class="cls-1 apkLower"
+                        d="M173.14,689.45l317.27,0-103,180.24S350.55,940.36,262,955.07L13.4,957.78Z"
+                        transform="translate(-11.63 -64.21)" />
+                    <path class="cls-1 apkUpper"
+                        d="M197.08,627.1S306.44,490.09,384,483.67c0,0,178.2,7.81,191.32-.53,0,0,106.63-64.46,0-146s-256.76,59.48-256.76,59.48L509.93,66.22l500.67,886.2-233.19,5.07S681,937,641.24,862.21,517,627.31,517,627.31Z"
+                        transform="translate(-11.63 -64.21)" />
                 </svg>
                 <!-- <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 997.19 891.56">
                     <title>apkk1</title>
@@ -759,9 +713,12 @@ var x = setInterval(function() {
         <div class="site-footer__links">
             <nav class="social-links"><span>Social</span> <span class="line"></span>
                 <ul>
-                    <li><a href="https://twitter.com/aparoksha_org" target="_blank"><span class="icon-twitter" style="font-size: 18px;"></span></a></li>
-                    <li><a href="https://www.facebook.com/aparoksha/" target="_blank"><span class="icon-facebook" style="font-size: 18px;"></span></a></li>
-                    <li><a href="https://www.instagram.com/aparokshaiiita/?hl=en" target="_blank"><span class="icon-instagram" style="font-size: 18px;"></span></a></li>
+                    <li><a href="https://twitter.com/aparoksha_org" target="_blank"><span class="icon-twitter"
+                                style="font-size: 18px;"></span></a></li>
+                    <li><a href="https://www.facebook.com/aparoksha/" target="_blank"><span class="icon-facebook"
+                                style="font-size: 18px;"></span></a></li>
+                    <li><a href="https://www.instagram.com/aparokshaiiita/?hl=en" target="_blank"><span
+                                class="icon-instagram" style="font-size: 18px;"></span></a></li>
                 </ul>
             </nav>
         </div>
